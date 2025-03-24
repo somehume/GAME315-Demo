@@ -20,4 +20,15 @@ public class Projectile : MonoBehaviour
     {
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision detected with: " + collision.gameObject.name); // Debug log to check collision
+
+        if (collision.gameObject.CompareTag("Target")) // Check if it hit the square
+        {
+            Debug.Log("Projectile hit the target! Destroying the target.");
+            Destroy(collision.gameObject); // Destroy the square target
+        }
+    }
 }
