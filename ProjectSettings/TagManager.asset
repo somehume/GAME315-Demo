@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
-  - NewTag
   - Collectible
+  - Coin
+  - Enemy
   layers:
   - Default
   - TransparentFX
