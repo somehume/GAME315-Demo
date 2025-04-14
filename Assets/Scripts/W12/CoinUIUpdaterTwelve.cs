@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CoinUIUpdaterTwelve : MonoBehaviour
 {
-    public Text coinText;
+    public TextMeshProUGUI coinText;
     private int coinCount = 0;
 
     void OnEnable() => CoinCollectorTwelve.OnCoinCollected += UpdateUI;

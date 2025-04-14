@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreManagerTwelve : MonoBehaviour
 {
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     private int score = 0;
 
     void OnEnable() => EnemyTwelve.OnEnemyDefeated += AddScore;
