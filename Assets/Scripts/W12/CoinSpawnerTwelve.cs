@@ -1,3 +1,4 @@
+// CoinSpawnerTwelve.cs
 using UnityEngine;
 
 public class CoinSpawnerTwelve : MonoBehaviour
@@ -9,7 +10,12 @@ public class CoinSpawnerTwelve : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < numberOfCoins; i++)
+        SpawnCoins();
+    }
+
+    public void SpawnCoins()
+    {
+        for (int i = 0; i < numberOfCoins - (numberOfCoins - 1); i++)
         {
             Vector2 pos = new Vector2(
                 Random.Range(spawnMin.x, spawnMax.x),

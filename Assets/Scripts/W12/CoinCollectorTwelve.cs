@@ -11,6 +11,13 @@ public class CoinCollectorTwelve : MonoBehaviour
         {
             Destroy(other.gameObject);
             OnCoinCollected?.Invoke();
+
+            // Respawn new coins
+            var spawner = FindObjectOfType<CoinSpawnerTwelve>();
+            if (spawner != null)
+            {
+                spawner.SpawnCoins();
+            }
         }
     }
 }
