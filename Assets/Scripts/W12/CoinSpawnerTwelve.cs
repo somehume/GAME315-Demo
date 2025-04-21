@@ -15,7 +15,7 @@ public class CoinSpawnerTwelve : MonoBehaviour
 
     public void SpawnCoins()
     {
-        for (int i = 0; i < numberOfCoins - (numberOfCoins - 1); i++)
+        for (int i = 0; i < numberOfCoins; i++)
         {
             Vector2 pos = new Vector2(
                 Random.Range(spawnMin.x, spawnMax.x),

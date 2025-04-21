@@ -8,6 +8,8 @@ TagManager:
   - Collectible
   - Coin
   - Enemy
+  - Projectile
+  - Wall
   layers:
   - Default
   - TransparentFX
