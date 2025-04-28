@@ -190,3 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   clip: {fileID: 8300000, guid: dda2dad525248444398aca4d78279417, type: 3}
+  explosion: {fileID: 6010605452817156478, guid: 95fd70bf7b3214f089dee0dc665d8339, type: 3}

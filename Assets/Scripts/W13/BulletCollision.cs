@@ -18,6 +18,11 @@ public class BulletCollision : MonoBehaviour
     [SerializeField] private AudioClip clip;
 
     /// <summary>
+    /// Particle system explosion triggered when the bullet collides with a wall or enemy.
+    /// </summary>
+    [SerializeField] private ParticleSystem explosion;
+
+    /// <summary>
     /// Initializes the audio source by locating the main camera and assigning the collision sound clip.
     /// </summary>
     private void Start()
@@ -34,8 +39,8 @@ public class BulletCollision : MonoBehaviour
     {
         if (collision.CompareTag("Wall") || collision.CompareTag("Enemy"))
         {
-            // TODO: Spawn particles here
 
+            Instantiate(explosion, transform.position, Quaternion.identity);
             source.Play(); // Play collision sound
             Destroy(gameObject); // Destroy bullet
         }
